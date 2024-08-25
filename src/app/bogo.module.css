@@ -1,0 +1,194 @@
+/* container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* card */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+
+/* offer style */
+.offer {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Selected offer expands */
+.offer.selected {
+  border: 2px solid #ff4081;
+  background-color: #fff6f8;
+  padding-bottom: 20px;
+  flex-direction: column;  /* Change to column when expanded */
+}
+
+/* Discount section */
+.discount {
+  background-color: #ff4081;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+  /* margin-right: 10px; */
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Radio button and details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-grow: 1;
+  margin-left:20px;
+  margin-right: 20px;
+  width: 100%;  /* Ensures details span full width */
+}
+
+/* Price style */
+.price {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.popular {
+  /* background-color: #ff4081; */
+  color: #ff4081;
+  font-weight: bold;
+  /* border-radius: px; */
+  /* padding: 2px 5px;
+  margin-left: 10px; */
+  font-size: 12px;
+}
+
+.discountTag {
+  background-color: #ff4081;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.strikePrice {
+  text-decoration: line-through;
+  color: #999;
+}
+
+
+/* Label and Price Layout */
+.details {
+  display: flex;
+  flex-direction: column; /* Align elements in a vertical column */
+  justify-content: center;
+  width: 100%;
+}
+
+.details label {
+  font-size: 16px; /* Adjust size for "Buy 1 Get 2" text */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Adds space between label and price */
+}
+
+.price {
+  font-size: 18px; /* Slightly larger for the price */
+  color: #333;
+}
+/* Selector container when expanded */
+.selectorContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.selector label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.selector select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Free Delivery & Total */
+.deliveryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.delivery {
+  color: #ff4081;
+}
+
+.totalAmount span {
+  font-weight: bold;
+}
+
+/* Add to cart button */
+.addToCart {
+  width: 100%;
+  background-color: #ff4081;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addToCart:hover {
+  background-color: #e63673;
+}
+
+/* Footer */
+.footer{
+  text-align: center;
+  margin-top: 5px;
+}
+.footertext {
+  color: #b52656;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.footertext2 {
+  text-align: center;
+  color: #a3a3a3;
+  margin-top: 12px;
+  font-size: 12px;
+}
